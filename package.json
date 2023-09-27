@@ -9,9 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tamagui/animations-css": "^1.72.3",
+    "@tamagui/font-inter": "^1.72.3",
+    "@tamagui/lucide-icons": "^1.72.3",
+    "@tamagui/next-plugin": "^1.72.3",
+    "@tamagui/next-theme": "^1.72.3",
+    "@tamagui/themes": "^1.72.3",
+    "next": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "next": "latest"
+    "tamagui": "^1.72.3"
   },
   "devDependencies": {
     "typescript": "latest",
