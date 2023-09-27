@@ -1,5 +1,4 @@
 "use client";
-import NextTamaguiSupport from "./next-tamagui-support";
 
 import TamaguiProvider from "./tamagui-provider";
 import TamaguiThemeProvider from "./tamagui-theme-provider";
@@ -7,17 +6,13 @@ import TamaguiThemeProvider from "./tamagui-theme-provider";
 import BothCombined from "./both-combined";
 
 const Providers = ({ children }) => (
-  <NextTamaguiSupport>
-    <TamaguiThemeProvider>
-      <TamaguiProvider>{children}</TamaguiProvider>
-    </TamaguiThemeProvider>
-  </NextTamaguiSupport>
+  <TamaguiThemeProvider>
+    <TamaguiProvider>{children}</TamaguiProvider>
+  </TamaguiThemeProvider>
 );
 
 const BothCombinedProvider = ({ children }) => (
-  <NextTamaguiSupport>
-    <BothCombined>{children}</BothCombined>
-  </NextTamaguiSupport>
+  <BothCombined>{children}</BothCombined>
 );
 
 // Uncomment me to break
