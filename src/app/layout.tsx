@@ -24,9 +24,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <NextTamaguiSupport>
-          <Providers>{children}</Providers>
-        </NextTamaguiSupport>
+        <Providers>
+          <NextTamaguiSupport>{children}</NextTamaguiSupport>
+        </Providers>
       </body>
     </html>
   );
